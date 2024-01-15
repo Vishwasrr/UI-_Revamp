@@ -1,0 +1,19 @@
+Soft assert: Continues test execution if any test case fails
+Hard assert: Stops test execution if any test case fails
+
+Implicit waits typically have a default polling frequency of 250 milliseconds.
+Explicit waits often use shorter intervals in the range of 100-500 milliseconds.
+Fluent waits allow flexible configuration based on your specific needs and the expected response time of the element/condition.
+
+Wait examples are illustrated in other demos as and when required
+REFER: handling_calendar.py, iframes_and_web_driver_wait.py files
+
+
+The advatange of it is that, when we use webdriver_manager, it helps manage the browser drivers automatically, eliminating the need for
+manual updates.
+But after the release of selenium 4.6.0, there's no need for all this. Simply:
+driver = webdriver.<BrowserName>() will work, eg:
+driver = webdriver.Edge()
+
+TODO:
+    1. Checkboxes and radio buttons (amazon radio button)
