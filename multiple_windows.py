@@ -17,7 +17,8 @@ driver.get(url)
 handles = driver.window_handles
 yatra_prime = driver.find_element(By.XPATH, "//img[@class='conta iner']")
 yatra_prime.click()
-driver.switch_to.window(handles[0])  # same as parent_handle = driver.current_window_handle
+parent_handle = handles[0] # same as parent_handle = driver.current_window_handle
+driver.switch_to.window(parent_handle)  
 covid_refund = driver.find_element(By.XPATH, "//img[@class='conta iner large-banner']")
 covid_refund.click()
 driver.switch_to.window(handles[0])

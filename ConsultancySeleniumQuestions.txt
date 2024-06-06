@@ -1,0 +1,155 @@
+Advantages and disadvantages of Selenium
+Local and global namespaces in python
+Classifiers in python
+Is Selenium 2.0 different from Selenium 3.0? If so, how?
+What are the test types supported by Selenium?
+Does Selenium have any technical limitations? If so, what are those limitations?
+What is POM (Page Object Model)? What are its advantages?
+Mention the use of XPath in Selenium testing.
+
+Refer: https://www.koenig-solutions.com/blog/top-selenium-interview-questions-and-answers?keyword=&device=m&utm_source=google&utm_medium=cpc&utm_device=m&utm_campaign=P-Max-New-adgroup-&gad_source=1&gclid=CjwKCAjw26KxBhBDEiwAu6KXt4XNr3uZPW0kIGqIeLXxc6o0wuqmy7nCV5itRPm4202Td7B-2xMIYhoCeBcQAvD_BwE
+
+
+Q1. What are the components of the Selenium suite?
+
+A1. There are 4 components of the Selenium suite:
+
+Selenium IDE: This is a Chrome/ Firefox plug-in designed to enhance the speed of automation script creation. IDE records a user’s actions while using the browser and then exports this recording as a reusable script.
+Selenium RC (Remote Control): Remote Control is a Selenium server. It allows users to write app tests using multiple programming languages. The server accepts the test script commands and sends them to the web browser in the form of Selenium core JavaScript commands. The web browser acts accordingly. 
+Selenium WebDriver: This is a programming interface that enables the creation and running of test cases. WebDriver creates provisions for acting on web elements. Unlike Remote Control, it doesn’t need a server as it can interact natively with web browser apps. 
+Selenium Grid: Grid has been designed for the distribution of commands simultaneously to various machines. It allows tests to be executed parallelly on various operating systems and browsers. Grid is remarkably flexible and integrates with all other components of the Selenium suite for parallel execution.
+Q2. Are there any limitations of Selenium testing?
+
+A2. Yes, there are several limitations.
+
+Tech support not available: Selenium is an open-source tool and therefore doesn’t have a dedicated support team for resolving any user queries. 
+Only web apps can be tested: Selenium must be integrated with Appium, TestNG and other third-party platforms if you wish to test mobile and desktop apps. 
+Support for testing images is limited.
+No built-in test management and reporting facilities: Selenium must be integrated with TestNG, JUnit and other tools for facilitating test management and reporting.
+Programming language knowledge is required: WebDriver expects users to have basic programming knowledge for testing.
+Q3. Which testing types are supported by Selenium?
+
+A3. Selenium supports two types of testing - Regression testing and Functional testing.
+
+Regression testing: This refers to the partial or complete selection of test cases already executed before being re-executed to confirm existing functionalities are working. 
+Functional testing: This encompasses the verification of all of an app’s functions against the specifications required. 
+Q4. State the differences between Selenium 2.0 and 3.0.
+
+A4. Selenium 2.0 simplifies automated test development for web apps. It is a representation of a merger between the original Selenium project and the WebDriver project. Remote Control has depreciated in value since the merging took place and was used to ensure backward compatibility.
+
+Selenium 3.0 can be considered an extended version of the 2.0 version. Version 3.0 is inherently backward compatible and doesn’t use Selenium RC. Selenium 3.0 is more stable and addresses several bugs within the 2.0 version. 
+
+Also Read: Robotic Process Automation (RPA) Developer Salary
+
+Q5. What is the same-origin policy? How should it be handled?
+
+A5. The Same Origin Policy is a Selenium feature created for security. According to the SOP, a web browser can allow scripts from a webpage to access another webpage’s contents given that both pages originate from the same source. ‘Origin’ can be understood as a combination of the hostname, URL scheme and the port number. 
+
+The Same Origin policy stops malicious scripts on Page A from accessing sensitive data on Page B.
+
+As an example, take a JavaScript program that google.com uses. This test app can access every domain page Google offers like mail, login, docs etc. But it can’t access other domain pages such as yahoo.com.
+
+Selenium Remote Control had been created for addressing this problem. The server behaves like a client-configured HTTP proxy and convinces the browser that Core and the app that you are testing belong to the same origin.
+
+Q6. What is Selenese? How do you classify it?
+
+A6. This is what you call the set of commands used in Selenium for testing web apps. The tester uses Selenese to test broken links, the existence of certain objects in the interface, Ajax functionality, windows, alerts, list options and much more.
+
+Action commands - They interact with the app directly.
+Accessors - They allow users to store specific values as user-defined variables.
+Assertions - They verify the app’s current state against the expected state.
+Q7. What is the key difference between driver.close() and driver.quit() ?
+
+A7. The command “driver.close()” will close the current window of a browser. If several browser windows are open together, the one at the top gets closed.
+
+The command “driver.quit()” closes all browser tabs and windows that are open together, not just the one in focus.
+
+Q8. Why is Selenium such a popular testing tool? Give clear reasons.
+
+A8. There are several benefits of using Selenium.
+
+It has a simple interface developed using JavaScript. This makes it easy to use.
+Selenium tests web apps against browsers such as Opera, Firefox, Safari and Chrome, among others. 
+You can write the test code in multiple languages such as Perl, Java, Python, PHP etc.
+It is platform-independent, which means you can deploy it on Windows, Linux and other Operating systems.
+You can integrate Selenium with JUnit, TestNG and other third-party platforms to manage testing. 
+Q9. How will you type text in an input box with Selenium?
+
+A9. sendKeys() is the command that allows you to type text in an input box. 
+
+Q10. How will you click a hyperlink in Selenium?
+
+A10. You can enter the following commands:
+
+driver.findElement(By.linkText(“Today’s deals”)).click();
+
+This command uses link text to find the element and clicks on it. The user is then sent to the corresponding page. 
+
+driver.findElement(By.partialLinkText(“Service”)).click();
+
+This command finds elements based on the link’s substring given in the parenthesis. Therefore, the web element is found by partialLinkText().
+
+Q11. How will you scroll down a page using JavaScript?
+
+A11. To scroll down a webpage, you use the scrollBy() method with the following syntax:
+
+executeScript("window.scrollBy(x-pixels,y-pixels)");
+
+Create an object in JavaScript first.
+JavascriptExecutor js = (JavascriptExecutor) driver;
+
+Launch the app you want to launch
+driver.get(“https://www.amazon.com”);
+
+Scroll as far as you want
+js.executeScript("window.scrollBy(0,1000)");
+
+Also Read: Top Robotic Process Automation (RPA) Companies
+
+Q12. How will you assert a webpage’s title?
+
+A12. Here’s how you do it:
+
+First, store the webpage’s title as a variable.
+String actualTitle = driver.getTitle();
+
+Type the expected name or title.
+String expectedTitle = “abcdefgh";
+
+Verify that both titles are equal.
+if(actualTitle.equalsIgnoreCase(expectedTitle))
+
+ 
+
+System.out.println("Title Matched");
+
+else
+
+System.out.println("Title didn't match");
+
+As an alternative, you can also use
+Assert.assertEquals(actualTitle, expectedTitle);
+
+Q13. How can you show a mouse hover over web elements?
+
+A13. In the Selenium WebDriver Instantiate Actions class, you can hover over an element using actions class utility. 
+
+Actions action = new Actions(driver)
+
+In this instance, we are hovering over a website’s search box.
+
+actions.moveToElement(driver.findElement(By.id("id of the searchbox"))).perform()
+
+Must Read: What is Robotic Process Automation (RPA)? - An Overview
+
+Q14. What do you mean by Page Object Model or POM?
+A14. Every webpage within an app has a corresponding page class. This helps locate web elements and performs various actions on them. POM refers to a design pattern that enables the creation of object repositories for web elements. POM improves the readability and reusability of code. You can run several test cases on object repositories.
+
+ 
+
+Q15. Can you automate Captcha using Selenium?
+A15. Selenium cannot automate Captcha. Captcha ensures automated programs and bots cannot access private data, hence Captcha itself cannot be automated by Selenium. Automation test engineers must type the captcha manually, but other fields can be auto-filled. 
+
+Q16. How are Windows-based pop-ups handled in Selenium?
+
+A16. Selenium has been designed for handling web apps. It does not natively support Windows-based features. However, these features can be handled by integrating Selenium with various third-party tools such as Robot and AutoIT.

@@ -1,0 +1,18 @@
+Xpath variants
+
+is_enabled() and is_displayed()
+checkboxes and radio buttons
+getting text and other attributes
+dropdowns, select boxes and multi selects
+autosuggestions: instead of hardcoding the selection from the drop down list, we make a for loop mechanism by using element attributes
+
+THE IMPORTANT ONES
+calendars
+execute javascript
+iframes
+alerts
+mouse hover, right click and double click
+sliders and drag and drop
+waits
+
+capture screenshots

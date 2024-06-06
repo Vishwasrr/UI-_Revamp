@@ -24,6 +24,9 @@ def tc_setup(request, browser, url):
     print("Close browser")
     # driver.close()
 
+# for headless mode:
+# options.add_argument("--headless")
+# pytest test_name --headless    
 
 def pytest_addoption(parser):
     parser.addoption("--browser", default="chrome")
@@ -31,10 +34,6 @@ def pytest_addoption(parser):
     # all params:
     #   parser.addoption("--browser", action="store", default="chrome", help="The browser to use for testing.")
     
-# for headless mode:
-# options.add_argument("--headless")
-# pytest test_name --headless    
-
 
 @pytest.fixture(scope="class", autouse=True)
 def browser(request):
@@ -69,6 +68,7 @@ def pytest_runtest_makereport(item, call):
             print(destination_file)
             driver.save_screenshot(destination_file)
             # capture_screenshot(destination_file)
+            # bhadrar@amazon.com
             if filename:
                 html = '<div><img src="%s" alt="screenshot" style="width:340px;height:228px;" ' \
                     'onclick="window.open(this.src)" align="right"/></div>' %filename

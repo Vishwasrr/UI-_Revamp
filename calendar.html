@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 10px;
+          text-align: center;
+          border: 1px solid #ddd;
+        }
+        th {
+          background-color: #f2f2f2;
+        }
+        .prev, .next {
+          cursor: pointer;
+          user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Calendar</h2>
+<div id="calendar"></div>
+
+<script>
+    function generateCalendar(year, month) {
+      const firstDay = new Date(year, month, 1);
+      const lastDay = new Date(year, month + 1, 0);
+      const daysInMonth = lastDay.getDate();
+      const startingDay = firstDay.getDay();
+
+      let html = '<table>';
+      html += '<tr>';
+      const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      for (let day of weekdays) {
+        html += '<th>' + day + '</th>';
+      }
+      html += '</tr>';
+
+      let day = 1;
+      for (let i = 0; i < 6; i++) {
+        html += '<tr>';
+        for (let j = 0; j < 7; j++) {
+          if (i === 0 && j < startingDay) {
+            html += '<td></td>';
+          } else if (day > daysInMonth) {
+            break;
+          } else {
+            html += '<td>' + day + '</td>';
+            day++;
+          }
+        }
+        html += '</tr>';
+        if (day > daysInMonth) {
+          break;
+        }
+      }
+      html += '</table>';
+
+      document.getElementById('calendar').innerHTML = html;
+    }
+
+    let currentMonth = new Date().getMonth();
+    let currentYear = new Date().getFullYear();
+    generateCalendar(currentYear, currentMonth);
+
+    document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('prev')) {
+        currentMonth--;
+        if (currentMonth < 0) {
+          currentMonth = 11;
+          currentYear--;
+        }
+        generateCalendar(currentYear, currentMonth);
+      } else if (event.target.classList.contains('next')) {
+        currentMonth++;
+        if (currentMonth > 11) {
+          currentMonth = 0;
+          currentYear++;
+        }
+        generateCalendar(currentYear, currentMonth);
+      }
+    });
+</script>
+
+<button class="prev">Previous Month</button>
+<button class="next">Next Month</button>
+
+</body>
+</html>

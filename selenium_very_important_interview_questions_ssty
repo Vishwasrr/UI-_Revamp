@@ -1,0 +1,22 @@
+SELENIUM INTERVIEW QUESTIONS:
+
+1. Selenium Architecture
+2. Latest version  of Selenium - 4.0
+3. Locators
+4. Difference between close() and quit()
+5. write xpath for a scenario
+6. Dependent and independent writing xpath 
+7. How do you read data from webtable
+8. How do you check if the contents of the table are in sorted order or not
+9. css locator - Why css is the Fastest locator?
+10. Single slash and duble slash difference
+11. Counting all links, maps, find element, find elements etc
+12. Unexpected tagname, NoSuchElementException, StaleElementReference, StaleElementException, TimeOutException
+13. Difference between implit wait and explicit wait
+14. Difference between absolute xpath and relative xpath
+15. Difference between findElement and findElements
+16. How do you check broken links
+17. How do you verify the color of the web element (https://selenium-python.readthedocs.io/api.html#selenium.webdriver.remote.webelement.WebElement.value_of_css_property)
+18. How do you get the location and size of a particular web element.
+19. Explian your automation framework.
+20. Diff assertions in selenium(assert.assertEquals, assertTrue etc)    

@@ -27,6 +27,7 @@ sleep(3)
 from_text = driver.find_element(By.XPATH, '//span[contains(@class, "from-price-text")]')
 while from_text.text != 'Rs 1593':
     actions.drag_and_drop_by_offset(left_handle, 0.1, yoffset=0).perform()  # moves the handle by 60px
+# actions <- uncomment and put a dot here to see the available options
 sleep(3)
 print("After dragging")
 print(from_text.text)

@@ -1,0 +1,67 @@
+Selenium
+1.	What is difference between driver and webdriver
+2.	If we use firefox browser means can we call all the webdriver methods or overridden methods
+3.	How many test case you have automated in your application?
+4.	How you design framework 
+5.	Url of your project 
+6.	In which module you have worked and how you design framework of that
+7.	If I give test case for automation what is your approach
+8.	If any of test case fail what is your approach 
+9.	Tell me some review comments you got 
+10.	If you get any defect how you identify it is manual testing side defect or your automation defect
+11.	Given a situation what is your testing approach
+12.	How do you do automation testing
+13.	What are exception you come across in selenium and how you handled
+14.	How to access file that contents are written in Chinese language means how you encode it
+15.	In project what types of operation you have performed through automation?
+16.	How many no of test engineer over there?
+17.	Who writes the test cases?
+18.	What is current requirement of your company?
+19.	If you have all the requirement what will be your first approach?
+20.	How to take screenshot?
+21.	Why we take screenshot?
+22.	How can you say that these test cases are passed or fail?
+23.	When you were testing that time the requirement of password was 8 character but after updating now its 12
+ characters instead of 8 character what will you do what will be your approach?
+24.	Diff b/w selenium 3 and selenium 4
+25.	How will you achieve parallel execution?
+26.	Preference of locators
+27.	If you pass two set of fixture to test script what happens and how you will handle this scenario based questions
+ on project
+28.	Agile methodologies in selenium
+29.	How to handle browsers (you're on a webpage in chrome browser, and you're clicking an element and it opens a new
+ browser ex: edge. Then how will you switch to it)
+30.	Ten test cases are there and you have to run only 8, what will you do
+31.	Difference between assert and verify all
+32.	In api you're loading a webpage and you're getting 301 status code, then how will you redirect it.
+33.	What type of errors you will see in console tab?
+34.	How do you configure pytest?
+35.	Can we locate element using same xpath but difference browser? 
+36.	Where all do you use switchto in selenium
+37.	What is the work of conftest?
+38.	How can you execute all combined folders? 
+39.	How can you scroll down the page at the time of automation?
+40.	How can you move the cursor to an element?
+41.	How many types of exceptions have you found in your project at the time of automation?
+42.	Which locator did you use most at the time of automation and why?
+43.	How to run a specific test is pytest
+44.	What are the setup and teardown processes you followed?
+45.	How do you run only 10 automation scripts out of 1000's of scripts? 
+46.	How do you upload an image and video into the web page using automation? 
+47.	How do you manage colours on a page?
+48.	How do you select the 4th item from the google search list?
+49.	Name json parsers
+50.	Worked on any data validation?
+51.	How you have done regression testing in your project, how many hours it's taken. How did you run that.
+52.	Relative and absolute x path, what does * signifies in the relative x path?
+53.	There are so many automation testing tools appium, testsigma (names not sure)etc. Why your team used only selenium
+ for testing not others? Why selenium?
+54.	After writing the function to automate, how do you integrate it to your frame?
+55.	What was the next thing you did after automating and run the functions?
+56.	Have you written empty functions?
+57.	What are empty functions?
+58.	Failed test cases how do you debug,
+59.	How many frames you have worked on?
+60.	Diff between data driven and keyword driven 
+61.	Cross browser techniques 
+62.	Dynamic web table is there then fetch the data present in 3rd row & 2nd column

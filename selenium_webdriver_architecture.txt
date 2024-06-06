@@ -1,0 +1,11 @@
+Selenium Architecture 
+    There are 4 parts in Selenium Architecture:
+        1. Client libraries - Each language has Selenium support 
+        2. JSON wire protocol(over HTTP): This protocol acts as a communication channel between the client libraries and the webdriver.
+        3. Webdriver - this is what drives the browser driver using a json mapping of functions to every browser action 
+        example. driver.forward(), driver.back(), driver.refresh() 
+        4. Real Browser. The automation actually happens in the browser but this is driven by the webdriver with the help client libraries and the json mapping of the functionalities over HTTP
+
+Why can't we directly interact with the browser?
+Most of the driver functions are written generically: for a webdriver class. The changes are later tailored according to each driver. But this wouldn't be possible if it was the direct browser as each browser is different. 
+

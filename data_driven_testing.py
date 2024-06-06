@@ -13,7 +13,7 @@ class TestClass:
     
     
     # alternate way
-    @file_date("path/to/testdata")
+    @file_data("path/to/testdata")
     def test_func2(self):
         pass
     

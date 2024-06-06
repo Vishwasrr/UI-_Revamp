@@ -29,10 +29,14 @@ driver.get(url)
 # switch via Name
 # driver.switch_to.frame("FrameName")
 
+# switch to main frame
+# driver.switch_to.default_content()
+
 # switch via iframe locator
 driver.switch_to.frame(driver.find_element(By.XPATH, "//iframe[@id='iframeResult']"))
 # switch via index
 driver.switch_to.frame(2)
+# driver.switch_to.default_content()
 sign_up = driver.find_element(By.XPATH, "//a[normalize-space()='Sign Up']")
 ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
 

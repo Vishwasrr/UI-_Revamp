@@ -1,0 +1,4 @@
+Selenium 2 didn't follow any kind of W3C standards, 3 followed but not strictly compliant, adheres to w3c standards
+find_element_by_xpath, etc, was first in 2, continued to 3. In 4, we have find_element 
+
+In 2, we had to have the version matching driver software and pass it's path in webdriver.Chrome(). Later, in 2, WebDriverManager came into picture. Now 3 comes with built-in driver management. 
