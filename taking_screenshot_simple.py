@@ -33,8 +33,10 @@ class TestSample(WebUtils):
 """Here's the easy way:"""
 # driver.save_screenshot( r"C:\Users\Vishw\OneDrive\Desktop\UI_AutomationRevamp\Screenshots\ss1.jpg")  # -> bool:
 # True if successfully captured w/o any IOError, else False can take any extension .jps, .png, etc
+
 # driver.get_screenshot_as_file(
 # r".\Screenshots\ss4.png")  # takes only .png extensions -> bool, True if successfully captured w/o any IOError
+
 # driver.get_screenshot_as_png() -> bytes
 
 

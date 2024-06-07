@@ -6,13 +6,13 @@ from time import sleep
 from functools import wraps
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.chrome.service import Service
 
 # @wait_for_element(driver, "sign_up")
 # def test_frames():
@@ -32,11 +32,15 @@ driver.get(url)
 # switch to main frame
 # driver.switch_to.default_content()
 
+# switch to parent frame
+# driver.switch_to.parent_frame()
+
 # switch via iframe locator
 driver.switch_to.frame(driver.find_element(By.XPATH, "//iframe[@id='iframeResult']"))
 # switch via index
 driver.switch_to.frame(2)
 # driver.switch_to.default_content()
+
 sign_up = driver.find_element(By.XPATH, "//a[normalize-space()='Sign Up']")
 ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
 
