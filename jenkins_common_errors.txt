@@ -1,0 +1,17 @@
+Permission errors:
+    Checkk user credentials
+    If something's wrong, we can fix that using commands like chmod
+    chmod 777 (read, write, execute) and user, group and others 
+
+Missing tools:
+    Check plugins
+    Check global configurations
+
+Network: 
+    Check connection
+    Ping command (>100ms is bad network)
+
+Node out of space:
+    Configure > Free space > Set space
+    (Automatically done by workspace cleanup plugins)
+    
