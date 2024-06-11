@@ -14,10 +14,11 @@ Network:
 Node out of space:
     Configure > Free space > Set space
     (Automatically done by workspace cleanup plugins)
+        Reasons why they might fail: invalid configurations, version incompatibilities, limited functionalities for certain scenarios, 
     
 Git authentication error: 
     Check the repo url
     Check the creds 
     Do a manual run on the jenkins agent 
 
-    
+
