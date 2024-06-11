@@ -15,3 +15,9 @@ Node out of space:
     Configure > Free space > Set space
     (Automatically done by workspace cleanup plugins)
     
+Git authentication error: 
+    Check the repo url
+    Check the creds 
+    Do a manual run on the jenkins agent 
+
+    
