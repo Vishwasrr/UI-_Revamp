@@ -12,21 +12,21 @@ import pytest
 # url = "https://www.google.com/"
 # driver.get(url)
 
-from web_utils import WebUtils
+# from web_utils import WebUtils
 
 
-@pytest.mark.usefixtures("tc_setup")
-class TestSample(WebUtils):
-    def test_sample(self):
-        # self.driver = webdriver.Chrome()
-        # self.driver.maximize_window()
-        print("Launching website")
-        # url = "http://www.yatra.com/"
-        # self.driver.get(url)
+# @pytest.mark.usefixtures("tc_setup")
+# class TestSample(WebUtils):
+#     def test_sample(self):
+#         # self.driver = webdriver.Chrome()
+#         # self.driver.maximize_window()
+#         print("Launching website")
+#         # url = "http://www.yatra.com/"
+#         # self.driver.get(url)
 
-        # assert 4 == 5
-        refund = self.driver.find_element(By.XPATH, "//input[@value='Check Refund']")
-        refund.click()
+#         # assert 4 == 5
+#         refund = self.driver.find_element(By.XPATH, "//input[@value='Check Refund']")
+#         refund.click()
         # capture_screenshot()
 
 
